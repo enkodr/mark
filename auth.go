@@ -69,7 +69,7 @@ func GetCredentials(
 			)
 		}
 	} else {
-		baseURL = url.Scheme + "://" + url.Host
+		baseURL = url.Scheme + "://" + url.Host + url.Path
 	}
 
 	baseURL = strings.TrimRight(baseURL, `/`)
